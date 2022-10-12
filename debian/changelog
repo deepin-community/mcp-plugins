@@ -1,0 +1,160 @@
+mcp-plugins (0.4.0-6) unstable; urgency=medium
+
+  * Add patch to fix FTCBFS. (Closes: #886754)
+  * Unused patch removed.
+  * Set dh/compat 11.
+  * Bump Standards.
+  * Use git instead of cgit in VCS.
+  * Use secure uri where possible.
+
+ -- Jaromír Mikeš <mira.mikes@seznam.cz>  Wed, 10 Jan 2018 18:16:40 +0100
+
+mcp-plugins (0.4.0-5) unstable; urgency=medium
+
+  * Set dh/compat 10.
+  * Update copyright file.
+  * Sign tags.
+  * Bump Standards.
+  * Fix VCS fields.
+  * Fix hardening.
+  * Tune .gitignore file.
+
+ -- Jaromír Mikeš <mira.mikes@seznam.cz>  Fri, 23 Dec 2016 11:17:07 +0100
+
+mcp-plugins (0.4.0-4) unstable; urgency=medium
+
+  * Added patch to remove LADSPA_PROPERTY_REALTIME. (Closes: #765548)
+
+ -- Jaromír Mikeš <mira.mikes@seznam.cz>  Thu, 10 Sep 2015 09:29:41 +0200
+
+mcp-plugins (0.4.0-3) unstable; urgency=medium
+
+  * Set dh/compat 9.
+  * Bump Standards.
+  * Remove DMUA.
+  * Enable parallel build.
+  * Update VCS fields.
+  * Add patch passing ldflags.
+  * Add local-option file.
+  * Improve .gitignore file.
+
+ -- Jaromír Mikeš <mira.mikes@seznam.cz>  Sun, 14 Jun 2015 20:39:36 +0200
+
+mcp-plugins (0.4.0-2) unstable; urgency=low
+
+  [ Jaromír Mikeš ]
+  * Add myself as uploader.
+  * Copyright updated to format 1.0
+  * Fix homepage in control file
+  * Fix URL in copyright file
+  * Fix watch file.
+  * Bump Standards.
+
+  [ Alessio Treglia ]
+  * Remove myself from the Uploaders list.
+  * Set DM-Upload-Allowed: yes.
+
+ -- Jaromír Mikeš <mira.mikes@seznam.cz>  Sun, 15 Apr 2012 16:21:41 +0200
+
+mcp-plugins (0.4.0-1) unstable; urgency=low
+
+  * New upstream bugfix-only release.
+  * Switch to format 3.0 (quilt).
+  * Switch to debhelper 7.
+  * debian/control:
+    - Correct Maintainer's name and email.
+    - Add myself to Uploaders field.
+    - Add ${misc:Depends} to the Depends field.
+    - Update Standards to 3.9.1.
+    - Add Vcs fields.
+    - Add Homepage field.
+  * Fix watch file (Closes: #450366).
+  * Remove pbuilder-test directory.
+  * Update debian/dirs file.
+  * Add git-buildpackage config file.
+  * Add .gitignore file.
+  * Set compression to bzip2.
+  * Update copyright information.
+  * Remove debian/docs file.
+  * Convert 10install_with_destdir.dpatch to quilt format -> 01-destdir.patch.
+  * Remove debian/patches/00list file.
+  * Remove .#Makefile.1.2 file
+
+ -- Alessio Treglia <alessio@debian.org>  Sat, 21 Aug 2010 10:00:46 +0200
+
+mcp-plugins (0.3.0-4) unstable; urgency=low
+
+  [ Free Ekanayaka ]
+  * package description wrongly "formated" (Closes: #351851)
+  * new package maintainer Debian Multimedia Team <debian-multimedia@lists.debian.org>
+  * use debhelper compat level 4
+  * fixed typo in Provides: (s/ladspa-plugins/ladspa-plugin)
+  * removed unused dir /usr/share/ams
+  * removed unneeded docbook-to-man build dependency
+  * removed stale mcp-plugins.1 from the package source
+
+  [Junichi Uekawa]
+  * Add free to uploaders
+  * add pbuilder-test, test for analyseplugin, and ldd.
+
+ -- Junichi Uekawa <dancer@debian.org>  Fri, 17 Feb 2006 08:12:44 +0900
+
+mcp-plugins (0.3.0-3) unstable; urgency=low
+
+  * Rebuilt against libstdc++6
+
+ -- Free Ekanayaka <free@agnula.org>  Wed, 16 Nov 2005 01:27:02 +0000
+
+mcp-plugins (0.3.0-2) unstable; urgency=low
+
+  * Bug fix: "mcp-plugins: Provide virtual package `ladspa-plugin'",
+    thanks to Mario Lang (Closes: #292771).
+
+ -- Free Ekanayaka <free@agnula.org>  Sun, 30 Jan 2005 18:30:43 +0100
+
+mcp-plugins (0.3.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Updated to Standards-Version 3.6.1.1
+  * First Debian upload (closes: #203903), sponsored by
+    Cosimo Alfarano <kalfa@debian.org>
+
+ -- Free Ekanayaka <free@agnula.org>  Wed,  1 Sep 2004 13:20:35 +0200
+
+mcp-plugins (0.2.1b-0test1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Free Ekanayaka <free@agnula.org>  Tue, 30 Dec 2003 11:31:17 +0100
+
+mcp-plugins (0.0.3-test1) unstable; urgency=low
+
+  * New upstream imported.
+
+ -- Free Ekanayaka <free@agnula.org>  Tue,  2 Dec 2003 18:58:50 +0600
+
+mcp-plugins (0.0.20030828-0test1) unstable; urgency=low
+
+  * Repackaged with the new versioning scheme.
+  * Using dpatch instead of directly hacking on upstream code.
+
+ -- Andrea Glorioso <andrea.glorioso@agnula.org>  Thu, 20 Nov 2003 10:04:44 +0100
+
+mcp-plugins (0.0.2-1.agnula-2) unstable; urgency=low
+
+  * debian/control: slightly reformatted text.
+
+ -- Andrea Glorioso <andrea.glorioso@binary-only.com>  Sat, 26 Jul 2003 18:04:18 +0200
+
+mcp-plugins (0.0.2-1.agnula-1) unstable; urgency=low
+
+  * Repackaged for AGNULA.
+
+ -- Free Ekanayaka <free@centrotemporeale.it>  Tue, 22 Jul 2003 11:45:09 +0200
+
+mcp-plugins (0.0.2-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Free Ekanayaka <free@centrotemporeale.it>  Sun, 13 Jul 2003 14:52:28 +0200
+

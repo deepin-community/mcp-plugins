@@ -1,0 +1,111 @@
+Author: Jaromír Mikeš <mira.mikes@seznam.cz>
+Description: Remove LADSPA_PROPERTY_REALTIME.
+Bug: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=765548
+Forwarded: no
+
+Index: mcp-plugins/cs_chorus_if.cc
+===================================================================
+--- mcp-plugins.orig/cs_chorus_if.cc
++++ mcp-plugins/cs_chorus_if.cc
+@@ -176,7 +176,7 @@ static const LADSPA_Descriptor moddescr
+     {
+ 	1944,
+ 	label1,
+-	LADSPA_PROPERTY_REALTIME | LADSPA_PROPERTY_HARD_RT_CAPABLE,
++	LADSPA_PROPERTY_HARD_RT_CAPABLE,
+ 	name1,
+ 	maker,
+ 	copyr,
+@@ -197,7 +197,7 @@ static const LADSPA_Descriptor moddescr
+     {
+ 	1945,
+ 	label2,
+-	LADSPA_PROPERTY_REALTIME | LADSPA_PROPERTY_HARD_RT_CAPABLE,
++	LADSPA_PROPERTY_HARD_RT_CAPABLE,
+ 	name2,
+ 	maker,
+ 	copyr,
+@@ -218,7 +218,7 @@ static const LADSPA_Descriptor moddescr
+     {
+ 	1951,
+ 	label3,
+-	LADSPA_PROPERTY_REALTIME | LADSPA_PROPERTY_HARD_RT_CAPABLE,
++	LADSPA_PROPERTY_HARD_RT_CAPABLE,
+ 	name3,
+ 	maker,
+ 	copyr,
+Index: mcp-plugins/cs_phaser_if.cc
+===================================================================
+--- mcp-plugins.orig/cs_phaser_if.cc
++++ mcp-plugins/cs_phaser_if.cc
+@@ -186,7 +186,7 @@ static const LADSPA_Descriptor moddescr
+     {
+ 	1946,
+ 	label0,
+-	LADSPA_PROPERTY_REALTIME | LADSPA_PROPERTY_HARD_RT_CAPABLE,
++	LADSPA_PROPERTY_HARD_RT_CAPABLE,
+ 	name0,
+ 	maker,
+ 	copyr,
+@@ -207,7 +207,7 @@ static const LADSPA_Descriptor moddescr
+     {
+ 	1947,
+ 	label1,
+-	LADSPA_PROPERTY_REALTIME | LADSPA_PROPERTY_HARD_RT_CAPABLE,
++	LADSPA_PROPERTY_HARD_RT_CAPABLE,
+ 	name1,
+ 	maker,
+ 	copyr,
+Index: mcp-plugins/mvchpf24_if.cc
+===================================================================
+--- mcp-plugins.orig/mvchpf24_if.cc
++++ mcp-plugins/mvchpf24_if.cc
+@@ -121,7 +121,7 @@ static const LADSPA_Descriptor moddescr
+     {
+ 	1960,
+ 	label1,
+-	LADSPA_PROPERTY_REALTIME | LADSPA_PROPERTY_HARD_RT_CAPABLE,
++	LADSPA_PROPERTY_HARD_RT_CAPABLE,
+ 	name1,
+ 	maker,
+ 	copyr,
+Index: mcp-plugins/mvclpf24_if.cc
+===================================================================
+--- mcp-plugins.orig/mvclpf24_if.cc
++++ mcp-plugins/mvclpf24_if.cc
+@@ -207,7 +207,7 @@ static const LADSPA_Descriptor moddescr
+     {
+ 	1941,
+ 	label1,
+-	LADSPA_PROPERTY_REALTIME | LADSPA_PROPERTY_HARD_RT_CAPABLE,
++	LADSPA_PROPERTY_HARD_RT_CAPABLE,
+ 	name1,
+ 	maker,
+ 	copyr,
+@@ -228,7 +228,7 @@ static const LADSPA_Descriptor moddescr
+     {
+ 	1942,
+ 	label2,
+-	LADSPA_PROPERTY_REALTIME | LADSPA_PROPERTY_HARD_RT_CAPABLE,
++	LADSPA_PROPERTY_HARD_RT_CAPABLE,
+ 	name2,
+ 	maker,
+ 	copyr,
+@@ -249,7 +249,7 @@ static const LADSPA_Descriptor moddescr
+     {
+ 	1943,
+ 	label3,
+-	LADSPA_PROPERTY_REALTIME | LADSPA_PROPERTY_HARD_RT_CAPABLE,
++	LADSPA_PROPERTY_HARD_RT_CAPABLE,
+ 	name3,
+ 	maker,
+ 	copyr,
+@@ -270,7 +270,7 @@ static const LADSPA_Descriptor moddescr
+     {
+ 	1948,
+ 	label4,
+-	LADSPA_PROPERTY_REALTIME | LADSPA_PROPERTY_HARD_RT_CAPABLE,
++	LADSPA_PROPERTY_HARD_RT_CAPABLE,
+ 	name4,
+ 	maker,
+ 	copyr,

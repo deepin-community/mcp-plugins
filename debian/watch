@@ -1,0 +1,3 @@
+version=3
+https://kokkinizita.linuxaudio.org/linuxaudio/downloads/ \
+	MCP-plugins-(.*)\.tar\.bz2

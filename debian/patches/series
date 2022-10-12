@@ -1,0 +1,4 @@
+01-destdir.patch
+02-pass_ldflags.patch
+03-remove_LADSPA_PROPERTY_REALTIME.patch
+04-cross.patch
